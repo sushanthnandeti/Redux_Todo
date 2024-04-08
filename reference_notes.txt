@@ -1,0 +1,22 @@
+Redux (for better state management):
+
+store ---> Stores all the states for easier data access. 
+
+Reducers ---> update and change the things. Similar to a controller
+
+useSelector ----> Used to select things from the store
+
+useDispatch ----> Used to update things from the store. useDispatch calls the specific reducer to complete this operation. 
+
+createSlice ----> Used to track the initial state of the store and all the reducers.
+
+
+
+
+
+Back-end Structure:
+
+index.js ---> Import all the required libraries and setting up the configurations. Also define all the routes
+models -----> Define the mongodb schemas. 
+controllers ---> Main handling and response logics
+middleware ---> check the autenthication and if the user is logged into the application (uses jwt and verifies token)
